@@ -2,7 +2,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   gap: 1.25rem;
-  padding: 8rem 0 4rem;
 }
 
 .week-specials-header {
@@ -10,9 +9,8 @@
   grid-row: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  align-content: center;
+  margin-bottom: 1.875rem;
 }
 
 .week-specials-header h2 {
@@ -22,42 +20,26 @@
   font-size: 2.5rem;
 }
 
-@media (max-width: 960px) {
-  .week-specials {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-  }
+/*-- Media queries ------------------------------------------------------*/
 
-  .week-specials-header {
-    grid-column: 1 / 3;
-  }
+@media (max-width: 960px) {
+.week-specials {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.week-specials-header {
+  grid-column: 1 / 3;
+}
 }
 
 @media (max-width: 692px) {
-  .week-specials {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-  }
-
-  .week-specials-header {
-    grid-column: 1 / 2;
-  }
+.week-specials {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
 }
 
-@media (max-width: 449px) {
-  .week-specials-header {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-  }
-
-  .week-specials-header a {
-    width: max-content;
-  }
+.week-specials-header {
+  grid-column: 1 / 2;
 }
-
-@media (max-width: 284px) {
-  .week-specials-header h2 {
-    letter-spacing: -0.5px;
-  }
 }

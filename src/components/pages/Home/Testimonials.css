@@ -1,20 +1,23 @@
 .testimonials {
-  padding: 2rem 0;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
   background-color: #495E57;
 }
 
 .testimonials .container {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
-  row-gap: 1.5rem;
-  column-gap: 1.25rem;
+  gap: 1.25rem;
 }
 
 .testimonials h2 {
   grid-column: 1 / 5;
   grid-row: 1;
+  margin-bottom: 1.875rem;
   color: #FFFFFF;
 }
+
+/*-- Media queries ------------------------------------------------------*/
 
 @media (max-width: 949px) {
 .testimonials .container {
